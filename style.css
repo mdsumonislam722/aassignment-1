@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Inter',sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9fafb;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #111;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:background-color 0.3s;
+}
+
+.btn-primary{
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover{
+    background-color: #1d4ed8;
+}
+
+.btn-outline{
+    background-color: transparent;
+    color: #2563eb;
+    border: 1px solid#2563eb;
+}
+
+.btn-outline:hover{
+    background-color: #ed4ed8;
+}
+.btn-large{
+    padding: 15px 30px;
+    font-size: 1.1rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0,05);
+
+}
+
+.logo, .footer-logo{
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 600;
+}
+
+.nav-links a:hover{
+    color: #2563eb;
+}
+
+.hero{
+    position: relative;
+    background: url(./assets/banner.jpg) center/cover no-repeat;
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-overlay{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,07);
+}
+
+.hero-content{
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+}
+
+.hero-content h1 i{
+    font-style: italic;
+    color: #93c5fd;
+
+}
+
+.hero-content p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #d1d5db;
+}
+
+.speakers-section{
+    padding: 80px 5%;
+    background-color: white;
+}
+
+.speakers-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-height: 1000px;
+    margin: 0 auto;
+}
+
+.speaker-card{
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0,05);
+
+}
+
+.speaker-img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    background-color: #cbd5e1;
+}
+
+.speaker-info{
+    padding: 20px;
+}
+
+.category{
+    font-size: 0.8rem;
+    color: #2563eb;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.speaker-info h3{
+    margin: 5px 0;
+    font-size: 1.3rem;
+}
+
+.speaker-info p{
+    color: #6b7280;
+    font-size: 0.95rem;
+
+}
+
+.pricing-section{
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.pricing-header p{
+    color: #4b5563;
+    margin-bottom: 40px;
+}
+
+.pricing-cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.price-card{
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 40px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pro-card{
+    background-color: #1e293b;
+    color: white;
+    transform: scale(1.05);
+    border: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0,2);
+
+}
+
+.plan-name{
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+.pro-card .plan-name{
+    color: #93c5fd;
+}
+
+.price-card h2{
+    font-size: 3rem;
+    margin: 15px 0 5px 0;
+
+}
+
+.per-person{
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.pro-card .per-person{
+    color: #94a3b8;
+}
+
+.features{
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.features li{
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    padding-left: 20px;
+    position: relative;
+}
+
+
+.features li::before{
+     content: "✓";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+
+}
+
+.pro-card .features li::before{
+    color: #60a5fa;
+
+}
+
+.price-card .btn{
+    width: 100%;
+
+}
+/* 
+.faq-section {
+  padding: 80px 20px;
+  background-color: #1a1a2e; /* Dark background */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 800px; /* Responsive, no fixed width */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background-color: #242442;
+  border-left: 5px solid #ff4b4b; /* Colored left border */
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  padding: 15px 20px;
+  cursor: pointer;
+} */
+
+.faq-item summary {
+  font-size: 1.1rem;
+  font-weight: 600;
+  outline: none;
+}
+
+/* Hide default arrow in some browsers for a cleaner look */
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  margin-top: 15px;
+  color: #cccccc;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.footer{
+    background-color: white;
+    padding: 40px 5% 20px 5%;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.social-links a{
+    text-decoration: none;
+    color: #4b5563;
+    margin-left: 15px;
+    font-weight: 600;
+
+}
+
+
+.footer-divider{
+    border: 0;
+    height: 1px;
+    background: #e5e7eb;
+    margin: 20px 0;
+}
+
+.footer-bottom{
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+
+@media(max-width: 768px){
+    .navbar{ 
+        flex-direction:column; gap: 15px;
+    .hero-content h1{
+        font-size: 2.5rem;
+    }
+    .speakers-grid{
+        grid-template-columns: 1fr;
+    }
+    .pricing-cards{
+    flex-direction: column;
+    }
+
+    .pro-card{
+        transform: scale(1);
+    }
+
+    .footer-top{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
