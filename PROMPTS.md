@@ -1,4 +1,4 @@
-<!-- # AI Challenge - Prompts Used
+# AI Challenge - Prompts Used
 
 Section Created: Frequently Asked Questions (FAQ)
 Tool Used: Google Gemini
@@ -22,4 +22,4 @@ Here are the prompts I used to ideate, structure, and style the FAQ section for 
 > - Add a subtle shadow (box-shadow) to the FAQ items.
 > - Add a colorful left border to each FAQ item for a modern look.
 > - Make it fully responsive. Do not use any fixed width or height (e.g., use max-width instead).
-> - Do not use any CSS frameworks, write pure custom CSS." -->
+> - Do not use any CSS frameworks, write pure custom CSS."
